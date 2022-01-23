@@ -15,9 +15,9 @@ function App() {
       const res = await axios.get(url);
       toArray.push(res.data);
       setPokemonData(toArray);
-      console.log(res)
+      console.log(res);
     } catch (e) {
-      console.log(e)
+      console.log(e);
     }
   };
   console.log(pokemonData);
@@ -51,9 +51,8 @@ function App() {
                           className="form-control"
                           onChange={handleChange} 
                           placeholder="Search for a Pokemon..."
-                          style={{display: "inline-block"}}
-                          /><button className="btn btn-primary" onClick={handleSubmit}>Submit</button>
-                        </label>
+                          />
+                        </label><button className="btn btn-primary submit-button" onClick={handleSubmit}>Submit</button>
                       </form>
                     </div>
                 </div>
